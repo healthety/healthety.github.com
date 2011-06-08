@@ -1,14 +1,15 @@
 body {
   background: #d7d7d7 url('../images/bg.png') 0 0 repeat;
   font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  font-size: 0.875em;
   margin: 0;
 }
 
-#container {
-  width: 700px;
+#wrapper {
+  width: 850px;
   margin: 0 auto;
   background: transparent url('../images/gradient.png') top center no-repeat;
-  min-height: 500px;
+  padding-top: 75px;
 }
 
 h1, h2 {
@@ -17,16 +18,50 @@ h1, h2 {
 
 h1 {
   color: #004892;
-  font-size: 55px;
-  margin-top: 0;
-  padding-top: 100px;
+  font-size: 4.3em;
+  margin: 0;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 1.5em;
   font-weight: normal;
 }
 
 h2 span {
   background: transparent url('../images/underline.png') 0 26px no-repeat;
+}
+
+#code_sample:after {
+  content: "";
+  visibility: hidden;
+  display: block;
+  clear: both;
+  height: 0;
+}
+
+#code_sample pre {
+  float: left;
+  width: 310px;
+  height: 150px;
+  font-size: 15px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  padding: 10px 10px 10px 15px;
+}
+
+#code_sample div {
+  float: left;
+  text-align: center;
+  width: 166px;
+  margin-top: 80px;
+}
+
+#code_sample div small {
+  font-size: 0.6em;
+  color: #666;
+}
+
+#screenshot {
+  text-align: center;
 }

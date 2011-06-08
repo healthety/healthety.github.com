@@ -1,18 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Healthety</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ribbon.css">
+    <link rel="stylesheet" href="css/highlight.css">
+    <meta name="google-site-verification" content="ojcVKXcli6RL9Nc8dbqBtg7GtKBNX2me5vntIKTFME0">
   </head>
   <body>
-    <div id="ribbon">
-      <a href="https://github.com/healthety">Fork me on GitHub</a>
-    </div>
-    <div id="container">
+    <div id="wrapper">
       <h1>Healthety</h1>
-      <h2><span>Realtime monitoring of what needs your attention.</span></h2>
+      <h2><span>Realtime monitoring of what your attention needs.</span></h2>
+      <div id="code_sample">
+        <pre>
+<span class="no">Healthety</span><span class="o">.</span>workers <span class="k">do</span>
+  host <span class="s2">'localhost'</span>
+  port <span class="mi">41234</span>
+
+  worker <span class="ss">:random</span> <span class="k">do</span>
+    interval <span class="mi">0</span><span class="o">.</span><span class="mi">5</span>
+    value <span class="nb">rand</span>(<span class="mi">10</span>)
+  <span class="k">end</span>
+<span class="k">end</span>
+</pre>
+        <div><img src="images/arrow.png" alt="Arrow" width="63" height="37" /></div>
+        <pre>
+<span class="kd">var</span> server = require(<span class="s2">'healthety'</span>);
+server.run(
+  <span class="mi">8124</span>, <span class="c1">// HTTP server port</span>
+  <span class="mi">1234</span> <span class="c1">// UDP server port</span>
+);
+</pre>
+      </div>
+      <p>Healthety is a realtime and easy to setup monitoring tool built on NodeJS.</p>
+      <div id="screenshot">
+        <img src="images/screenshot.png" alt="Screenshot" width="575" height="384" />
+      </div>
     </div>
+    <a href="https://github.com/healthety/healthety"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a>
   </body>
 </html>
